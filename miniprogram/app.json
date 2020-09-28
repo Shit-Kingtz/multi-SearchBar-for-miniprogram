@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "plugins": {
+    "multi-searchBar": {
+      "version": "dev",
+      "provider": "wxb295237bb3b7f4d8"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

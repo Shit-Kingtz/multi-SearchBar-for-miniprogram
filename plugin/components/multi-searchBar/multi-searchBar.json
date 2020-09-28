@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "mp-vtabs": "../vtabs/vtabs",
+	"mp-vtabs-content": "../vtabs-content/vtabs-content"
+  }
+}

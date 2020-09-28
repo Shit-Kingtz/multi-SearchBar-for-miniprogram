@@ -1,0 +1,17 @@
+<import src="../template/template.wxml" />
+
+<multi-searchBar 
+	id="multi-searchBar" 
+	vtabs="{{ vtabs }}"
+	bind:search="search"
+>
+	
+	<block wx:for="{{ vtabs }}" wx:for-item="item" wx:key="index">
+		<view slot="{{ item.templateName }}">
+			<template is="{{ item.templateName }}" data="{{ streetList, streetIndex }}"></template>
+		</view>
+	</block>
+	<view slot="btn-area">
+		<template is="btn-area"></template>
+	</view>
+</multi-searchBar>

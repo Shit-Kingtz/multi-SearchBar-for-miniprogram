@@ -1,0 +1,5 @@
+@import '../../common/weui.wxss';
+
+.weui-label {
+	text-align: center;
+}

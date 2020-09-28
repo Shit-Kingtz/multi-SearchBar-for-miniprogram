@@ -1,0 +1,34 @@
+<import src="../../pages/template/template.wxml"></import>
+
+<view wx:if="{{mask}}" class="weui-mask {{swiper_open ? '' : 'weui-mask_hidden'}}" bindtap="hideNav"></view>
+<view id="swiper-tab">
+	<view class="swiper-tab">
+		<view class="swiper-tab-list {{ currentTab==0 ? 'on' : '' }}" data-current="0" bindtap="tabNav">
+			筛选
+			<i></i>
+		</view>
+	</view>
+	<view class="swiper-item {{swiper_open?'swiper-item_toggle':''}}" style='display:block'>
+		<form catchsubmit="formSubmit">
+			<view class="shaixuankuang">
+				<mp-vtabs
+					vtabs="{{vtabs}}"
+					activeTab="{{activeTab}}" 
+					bindtabclick="onTabClick"
+					bindchange="onChange"
+					class="test"
+				>
+					<block wx:for="{{vtabs}}" wx:for-item="item" wx:key="title" >
+						<mp-vtabs-content tabIndex="{{index}}">
+							<view class="vtabs-content-item">
+								<slot name="{{ item.templateName }}"></slot>
+							</view>
+						</mp-vtabs-content>
+					</block>
+					<view style="height: 1px;width: 100%"></view>
+				</mp-vtabs>
+			</view>
+			<slot name="btn-area"></slot>
+		</form>
+	</view>
+ </view>

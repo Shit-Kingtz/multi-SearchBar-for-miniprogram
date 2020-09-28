@@ -1,0 +1,98 @@
+<template name="template1">
+	<view class="weui-cell">
+		<view class="weui-cell__hd">
+			<view class="weui-label">条件1：</view>
+		</view>
+		<view class="weui-cell__bd">
+			<input class="weui-input" name="Condition1" value="123" placeholder="请输入小区" />
+		</view>
+	</view>
+	<view class="weui-cell">
+		<view class="weui-cell__hd">
+			<view class="weui-label">条件2：</view>
+		</view>
+		<view class="weui-cell__bd">
+			<input class="weui-input" name="Condition2" value="123" placeholder="请输入小区" />
+		</view>
+	</view>
+	<view class="weui-cell">
+		<view class="weui-cell__hd">
+			<view class="weui-label">条件3：</view>
+		</view>
+		<view class="weui-cell__bd">
+			<input class="weui-input" name="Condition3" value="123" placeholder="请输入详细地址" />
+		</view>
+	</view>
+	<view class="weui-cell">
+		<view class="weui-cell__hd">
+			<view class="weui-label">条件4：</view>
+		</view>
+		<view class="weui-cell__bd">
+			<input class="weui-input" name="Condition4" value="123" placeholder="请输入小区" />
+		</view>
+	</view>
+	<view class="weui-cell">
+		<view class="weui-cell__hd">
+			<view class="weui-label">条件5：</view>
+		</view>
+		<view class="weui-cell__bd">
+			<input class="weui-input" name="Condition5" value="123" placeholder="请输入小区" />
+		</view>
+	</view>
+	<view class="weui-cell">
+		<view class="weui-cell__hd">
+			<view class="weui-label">条件6：</view>
+		</view>
+		<view class="weui-cell__bd">
+			<input class="weui-input" name="Condition6" value="123" placeholder="请输入详细地址" />
+		</view>
+	</view>
+	<view class="weui-cell">
+		<view class="weui-cell__hd">
+			<view class="weui-label">条件7：</view>
+		</view>
+		<view class="weui-cell__bd">
+			<input class="weui-input" name="Condition7" value="123" placeholder="请输入小区" />
+		</view>
+	</view>
+	<view class="weui-cell">
+		<view class="weui-cell__hd">
+			<view class="weui-label">条件8：</view>
+		</view>
+		<view class="weui-cell__bd">
+			<input class="weui-input" name="Condition8" value="123" placeholder="请输入小区" />
+		</view>
+	</view>
+	<view class="weui-cell">
+		<view class="weui-cell__hd">
+			<view class="weui-label">条件9：</view>
+		</view>
+		<view class="weui-cell__bd">
+			<input class="weui-input" name="Condition9" value="123" placeholder="请输入详细地址" />
+		</view>
+	</view>
+</template>
+<template name="template2">
+    <view>template22222</view>
+</template>
+<template name="template3">
+    <view>template33333</view>
+</template>
+<template name="template4">
+    <view>template44444</view>
+</template>
+<template name="template5">
+    <view>template55555</view>
+</template>
+<template name="template6">
+    <view>template66666</view>
+</template>
+<template name="template7">
+    <view>template77777</view>
+</template>
+<template name="template8">
+    <view>template88888</view>
+</template>
+<template name="template9">
+    <view>template99999</view>
+</template>

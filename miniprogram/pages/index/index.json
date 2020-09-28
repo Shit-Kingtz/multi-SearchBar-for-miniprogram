@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "multi-searchBar": "plugin://multi-searchBar/multi-searchBar"
+  }
+}

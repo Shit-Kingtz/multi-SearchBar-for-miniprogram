@@ -1,0 +1,9 @@
+{
+  "publicComponents": {
+    "multi-searchBar": "components/multi-searchBar/multi-searchBar"
+  },
+  "pages": {
+    "template": "pages/template/template"
+  },
+  "main": "index.js"
+}

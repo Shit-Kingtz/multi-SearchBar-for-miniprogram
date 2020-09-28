@@ -1,0 +1,314 @@
+<template name="template1">
+	<view id="template1">
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">街道：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<!-- <input class="weui-input" data-name="Condition1" bindinput="ConditionInput" /> -->
+				<picker bindchange="bindStreetChange" data-name="Condition1" range-key="name" value="{{ streetIndex }}" range="{{ streetList }}">
+					<view class="weui-select {{ streetIndex === '' ? 'placeholder' : '' }}" style="height: 35px;line-height: 35px;">
+						{{ streetIndex === '' ? '请选择' : streetList[streetIndex].name }}
+					</view>
+				</picker>
+			</view>
+		</view>
+		<view class="weui-cell">	
+			<view class="weui-cell__hd">
+				<view class="weui-label">小区：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition2" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">状态：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition3" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">详细地址：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition4" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<!-- <view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件5：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition5" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件6：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition6" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件7：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition7" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件8：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition8" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件9：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition9" bindinput="ConditionInput" />
+			</view>
+		</view> -->
+	</view>
+</template>
+<template name="template2">
+	<view id="template2">
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件11：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition11" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件22：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition22" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件33：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition33" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件44：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition44" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件55：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition55" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件66：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition66" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件77：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition77" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件88：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition88" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件99：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition99" bindinput="ConditionInput" />
+			</view>
+		</view>
+	</view>
+</template>
+<template name="template3">
+	<view id="template3">
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件111：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition111" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件222：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition222" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件333：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition333" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件444：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition444" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件555：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition555" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件666：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition666" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件777：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition777" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件888：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition888" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件999：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition999" bindinput="ConditionInput" />
+			</view>
+		</view>
+	</view>
+</template>
+<template name="template4">
+	<view id="template4">
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件1111：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition1111" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件2222：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition2222" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件3333：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition3333" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件4444：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition4444" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件5555：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition5555" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件6666：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition6666" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件7777：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition7777" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件8888：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition8888" bindinput="ConditionInput" />
+			</view>
+		</view>
+		<view class="weui-cell">
+			<view class="weui-cell__hd">
+				<view class="weui-label">条件9999：</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" data-name="Condition9999" bindinput="ConditionInput" />
+			</view>
+		</view>
+	</view>
+</template>
+<template name="btn-area">
+	<view class="weui-btn-area">
+		<button class="weui-btn_primary confirm-btn btn-success" hover-class="none" bindtap="formSubmit">查询</button>
+	</view>
+</template>
