@@ -1,13 +1,11 @@
-let plugin = requirePlugin("multi-searchBar");
-
 const app = getApp()
 Page({
 	data: {
 		vtabs: [
-			{ index: 0, title: '常规', templateName:'template1' },
-			{ index: 1, title: '选项2', templateName:'template2' },
-			{ index: 2, title: '选项3', templateName:'template3' },
-			{ index: 3, title: '选项4', templateName:'template4' },
+			{ title: '常规', templateName:'template1' },
+			{ title: '选项2', templateName:'template2' },
+			{ title: '选项3', templateName:'template3' },
+			{ title: '选项4', templateName:'template4' },
 		],
 		streetList: [],
 		streetIndex: '',
@@ -55,16 +53,6 @@ Page({
 			streetList: app.globalData.streetList
 		})
 		console.log(this.data.streetList)
-	},
-	handleChange(index) {
-	    this.setData({
-			activeTab: index,
-	    });
-	},
-	onChange(index) {
-	    this.setData({
-			activeTab: index,
-	    });
 	},
 	bindStreetChange(e) {
 		let ConditionName = `params.${e.currentTarget.dataset.name}`
