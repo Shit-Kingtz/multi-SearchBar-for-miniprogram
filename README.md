@@ -23,7 +23,7 @@
 // app.json
 {
 	"plugins": {
-		"chooseLocation": {
+		"multi-searchBar": {
 			"version": "0.0.1",
 			"provider": "wxccc031c63643f668"
 		}
@@ -172,7 +172,7 @@ Page({
 ```
 
 # 效果图
-图片请移步至微信开放社区插件主页
+图片请移步至微信开放社区插件主页https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wxccc031c63643f668
 
 # 问题反馈
 如果在使用组件过程中遇到问题，可以在本项目中提交issues。
